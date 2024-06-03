@@ -16,9 +16,9 @@ with open("admins.txt", "r") as admins_txt:
     admins_list = [i.replace("\n","") for i in admins_list]
 
 # Connect to Scratch
-project_id = 669020072
+project_id = 1030998982
 
-session = scratch3.Session(session_id=session_id, username='yippymishyTest')  # Update with your session ID and username
+session = scratch3.Session(session_id=session_id, username='mrobi343')  # Update with your session ID and username
 print('Logged in as ' + session.get_linked_user().username)
 conn = session.connect_cloud(project_id)  # Update with your project ID
 client = scratch3.CloudRequests(conn, used_cloud_vars=["1", "2", "3"])
